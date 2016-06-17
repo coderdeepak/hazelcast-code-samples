@@ -33,6 +33,7 @@
         <module>unique-names</module>
         <module>destroying-instances</module>
         <module>configure-logging</module>
+        <module>first-hazelcast-example</module>
     </modules>
 
     <dependencies>

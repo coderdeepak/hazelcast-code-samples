@@ -1,0 +1,27 @@
+Today, in the era of cloud computing, it is important that server-side systems are:
+
+		Scalable: just add and remove machines to match the required capacity.
+
+		Highly available: if one or more machines has failed, the system should continue as if nothing happened.
+
+		Highly performant: performance should be fast, and cost effective.
+
+Hazelcast is an In-Memory Data Grid that is:
+
+	highly available:It does not lose data after a JVM crash because it automatically replicates partition data to other cluster members. In the case of a member going down, the system will automatically failover by restoring the backup. Hazelcast has no master member that can form a single point of failure; each member has equal responsibilities.
+
+	lightning-fast:Each Hazelcast member can do thousands of operations per second.
+	Hazelcast on its own is elastic, but not automatically elastic; 
+	it will not automatically spawn additional JVMs to become members in the cluster 
+	when the load exceeds a certain upper threshold. Also, 
+	Hazelcast will not shutdown JVMs when the load drops below a specific threshold. 
+	You can achieve this by adding a glue code between Hazelcast and your cloud environment.
+	
+	
+Hazelcast is highly scalable and available (100% operational, never failing). 
+Distributed applications can use Hazelcast for distributed caching, synchronization, 
+clustering, processing, pub/sub messaging, etc. 
+Hazelcast is implemented in Java and has clients for Java, C/C++, .NET and REST. 
+Hazelcast also speaks memcache protocol. 
+It plugs into Hibernate and can easily be used with any existing database system.
+

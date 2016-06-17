@@ -3,6 +3,7 @@
                                http://www.hazelcast.com/schema/config/hazelcast-config-3.6.xsd"
            xmlns="http://www.hazelcast.com/schema/config">
 
+<!-- instantiate an instance of Hazelcast which will listen at post 7000 -->
     <network>
         <port>7000</port>
         <interfaces>
